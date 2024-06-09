@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="419dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primeiro Numero"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtNro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/EmailToMe"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="EditableContentDescCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Segundo Numero"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtNro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="email"
+            android:ems="10"
+            android:inputType="number"
+            tools:ignore="EditableContentDescCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btSomar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="somar"
+            android:text="somar" />
+
+        <Button
+            android:id="@+id/btSubtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="subtrair"
+            android:text="subtrair" />
+
+        <Button
+            android:id="@+id/btMultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="multiplicar"
+            android:text="multiplicar" />
+
+        <Button
+            android:id="@+id/btDividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dividir"
+            android:text="dividir" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
